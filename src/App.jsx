@@ -3,8 +3,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
 import { Wallet, TrendingUp, TrendingDown, RefreshCcw, Activity, CheckCircle, AlertCircle } from 'lucide-react';
 
 export default function App() {
-  const FINNHUB_API_KEY = import.meta.env.FINNHUB_API_KEY || "YOUR_API_KEY_HERE";
-
+  const FINNHUB_API_KEY = "dbb5oehr01qrv06okd7gdbb5oehr01qrv06okd80";
   const [cash, setCash] = useState(() => parseFloat(localStorage.getItem('trading_cash')) || 100000);
   const [portfolio, setPortfolio] = useState(() => JSON.parse(localStorage.getItem('trading_portfolio')) || {});
   const [selectedStock, setSelectedStock] = useState('AAPL');
